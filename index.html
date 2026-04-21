@@ -70,6 +70,15 @@
   .service h3 { font-size:1rem; margin-bottom:.4rem; color:var(--accent2); }
   .service p { font-size:.85rem; color:var(--dim); }
 
+  /* TESTIMONIALS */
+  .testimonials { display:grid; grid-template-columns:repeat(auto-fill,minmax(280px,1fr)); gap:1.5rem; }
+  .quote { background:var(--bg2); border:1px solid var(--border); border-left:3px solid var(--accent); border-radius:.6rem; padding:1.6rem; }
+  .quote-text { font-size:.95rem; color:var(--text); font-style:italic; line-height:1.55; margin-bottom:1rem; }
+  .quote-text::before { content:"\"" ; color:var(--accent); font-size:1.6rem; font-weight:700; margin-right:.2rem; vertical-align:-.15em; }
+  .quote-text::after  { content:"\"" ; color:var(--accent); font-size:1.6rem; font-weight:700; margin-left:.2rem;  vertical-align:-.15em; }
+  .quote-author { font-size:.82rem; color:var(--accent2); font-weight:600; }
+  .quote-source { font-size:.75rem; color:var(--dim); margin-top:.2rem; }
+
   /* CONTACT */
   .contact-box { background:var(--bg2); border:1px solid var(--border); border-radius:.75rem; padding:2.5rem; text-align:center; }
   .contact-box p { color:var(--dim); margin:.5rem 0 2rem; }
@@ -85,6 +94,7 @@
   <div>
     <a href="#projects">Projects</a>
     <a href="#services">Services</a>
+    <a href="#testimonials">Reviews</a>
     <a href="#contact">Hire Me</a>
   </div>
 </nav>
@@ -209,6 +219,32 @@
       <h3>Automation</h3>
       <p>Scraping, scheduling, notification systems, GitHub pipelines, and anything that saves you time every day.</p>
     </div>
+  </div>
+</section>
+
+<section id="testimonials">
+  <h2>What Players Are Saying</h2>
+  <p class="section-sub">Real comments from the Nexus Mods community on my Dying Light: The Beast mods.</p>
+  <div class="testimonials">
+
+    <div class="quote">
+      <p class="quote-text">I tested the new update, and everything seems to be working now, all the previous issues are gone, thank you again for fixing it.</p>
+      <div class="quote-author">ZeidCeZeY</div>
+      <div class="quote-source">Apex Predator — Nexus Mods</div>
+    </div>
+
+    <div class="quote">
+      <p class="quote-text">Thank you so much! I was super interested in using the pack but with all the firearms I had and the wild movement they were simply unusable unless standing 100% still, very much appreciated!</p>
+      <div class="quote-author">TurtleCQM</div>
+      <div class="quote-source">Economy Overhaul — Nexus Mods</div>
+    </div>
+
+    <div class="quote">
+      <p class="quote-text">I'm pleased that you update this often and it gives me inspiration for my mini-aio pack to fix some of the stuff I got broken there, thank you again.</p>
+      <div class="quote-author">ZeidCeZeY</div>
+      <div class="quote-source">Apex Predator — Nexus Mods</div>
+    </div>
+
   </div>
 </section>
 
